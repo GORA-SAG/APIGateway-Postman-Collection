@@ -13,7 +13,6 @@
             }
         ],
         "scope": {
-        //applicable_API_Types
             "applicableAPITypes": [
                 "REST"
             ],
