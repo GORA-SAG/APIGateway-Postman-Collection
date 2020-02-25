@@ -1,0 +1,39 @@
+{
+    "policy": {
+        "names": [
+            {
+                "value": "Policy Name",
+                "locale": "English"
+            }
+        ],
+        "descriptions": [
+            {
+                "value": "Policy Description",
+                "locale": "English"
+            }
+        ],
+        "scope": {
+        //applicable API Types
+            "applicableAPITypes": [
+                "REST"
+            ],
+            "scopeConditions": [],
+            "logicalConnector": "AND"
+        },
+        "policyEnforcements": [
+            {
+                "enforcements": [
+                    {
+                        "enforcementObjectId": "5d988a54-eaee-4789-986e-78d8f2e8f69d",
+                        "order": "0"
+                    }
+                ],
+                "stageKey": "IAM"
+            }
+        ],
+        "policyScope": "GLOBAL",
+        "active": true,
+        "global": true,
+        "systemPolicy": true
+    }
+}
