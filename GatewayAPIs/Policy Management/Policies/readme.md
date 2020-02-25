@@ -1,11 +1,14 @@
-Author: Gokul Raj S
+# Author
+Gokul Raj S
 
-Supported Version: 10.1
+# Supported Version
+10.1 and above
 
-Supported API Types: All
+# Supported API Types
+All
 
-Explanation: 
-Policy payload contains the payload to create policy in API Gateway. API Gateway consist of several types of policies. 
+# Explanation: 
+PolicyPayload.json contains the payload to create policy in API Gateway. API Gateway consist of several types of policies. 
 
 They are
   1. SCOPE - Scope Level Policy
