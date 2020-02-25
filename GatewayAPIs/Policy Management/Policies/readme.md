@@ -20,6 +20,6 @@ The hierarchy of policies goes like Scope -> Service -> Global. Scope policy ove
 
 We can change the policyScope with the above mentioned policies type to create the respective policy.
 
-Before creating policy first we need to the required policy action and then associate the created policy action with the policy.
+Before creating policy first we need to create the required policy action and then associate the created policy action with the policy.
 
 Note: One policy action must associate with one policy. Can't associate with more than one policy.
