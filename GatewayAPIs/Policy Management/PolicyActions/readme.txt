@@ -1,1 +1,1 @@
-Under policy actions we have categorized the PolicyActions with the API Invoke stage.
+Under policy actions we have categorized the PolicyActions with the stage of API invoking life cycle.
