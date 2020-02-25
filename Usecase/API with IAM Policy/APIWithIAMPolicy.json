@@ -1,0 +1,39 @@
+{
+    "policy": {
+        "id": "7b27c86d-27e8-4d6f-8a89-6e75f8e2f157",
+        "names": [
+            {
+                "value": "IAM Global Policy",
+                "locale": "English"
+            }
+        ],
+        "descriptions": [
+            {
+                "value": "test policy",
+                "locale": "English"
+            }
+        ],
+        "scope": {
+            "applicableAPITypes": [
+                "REST"
+            ],
+            "scopeConditions": [],
+            "logicalConnector": "AND"
+        },
+        "policyEnforcements": [
+            {
+                "enforcements": [
+                    {
+                        "enforcementObjectId": "5d988a54-eaee-4195-986e-78d8f2e8f69d",
+                        "order": "0"
+                    }
+                ],
+                "stageKey": "IAM"
+            }
+        ],
+        "policyScope": "GLOBAL",
+        "active": true,
+        "global": true,
+        "systemPolicy": true
+    }
+}
