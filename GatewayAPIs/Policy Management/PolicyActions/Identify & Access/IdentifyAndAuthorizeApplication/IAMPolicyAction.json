@@ -1,0 +1,43 @@
+{
+    "policyAction": {
+        "names": [
+            {
+                "value": "Identify & Authorize Application",
+                "locale": "en"
+            }
+        ],
+        "templateKey": "evaluatePolicy",
+        "parameters": [
+            {
+                "templateKey": "logicalConnector",
+                "values": [
+                    "OR"
+                ]
+            },
+            {
+                "templateKey": "allowAnonymous",
+                "values": [
+                    "false"
+                ]
+            },
+            {
+                "templateKey": "IdentificationRule",
+                "parameters": [
+                    {
+                        "templateKey": "applicationLookup",
+                        "values": [
+                            "strict"
+                        ]
+                    },
+                    {
+                        "templateKey": "identificationType",
+                        "values": [
+                            "apiKey"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "active": "false"
+    }
+}
