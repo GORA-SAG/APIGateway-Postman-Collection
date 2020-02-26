@@ -14,35 +14,35 @@ This postman collection contains API Gateway REST service to create an API with 
 Create API using file.
 
 ###### Script:
-'''
+```
 let apiResponse=JSON.parse(responseBody);
 pm.environment.set("apiID", apiResponse.apiResponse.api.id);
 pm.environment.set("policyID", apiResponse.apiResponse.api.policies[0]);
-'''
+```
 
 ## Step 2:
 Create IAM Policy Action
 
 ###### Script:
-'''
+```
 let policyActionResponse=JSON.parse(responseBody);
 pm.environment.set("iamPolicyActionID", policyActionResponse.policyAction.id);
-'''
+```
 
 ## Step 3:
 Create Log Invocation LMT Policy Action
 
 ###### Script:
-'''
+```
 let policyActionResponse=JSON.parse(responseBody);
 pm.environment.set("logInvocationPolicyActionID", policyActionResponse.policyAction.id);
-'''
+```
 
 ## Step 4:
 Get API policy with PolicyID. Fetch the policy from API creation response.
 
 ###### Script:
-'''
+```
 let policyResponse=JSON.parse(responseBody);
 pm.environment.set()
 pm.environment.set("policyName",""+policyResponse.policy.names[0].value);
@@ -57,7 +57,7 @@ for(var i=0;i<policyEnforcements.length;i++){
         pm.environment.set("transportPolicyActionID",policyEnforcements[i].enforcements[0].enforcementObjectId);
     }
 }
-'''
+```
 
 ## Step 5:
 Associate the created policy action with it.
@@ -66,10 +66,10 @@ Associate the created policy action with it.
 Create Application with username identifier.
 
 ###### Script:
-'''
+```
 let applicatonResponse=JSON.parse(responseBody);
 pm.environment.set("applicationID", applicatonResponse.id);
-'''
+```
 
 ## Step 7:
 Associate created application with API.
